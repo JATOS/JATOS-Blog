@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This blog is about JATOS (Just Another Tool for Online Studies).
 
-### More Information
+JATOS helps you setup and run your online studies on your own server.
 
-A place to include any other types of information that you'd like to include about yourself.
+### More information
 
-### Contact me
+Find more information about JATOS in [our documentation](https://github.com/JATOS/JATOS/wiki).
 
-[email@domain.com](mailto:email@domain.com)
+### Contact us
+
+If you have questions about JATOS or online experiments in general please [contact us](https://github.com/JATOS/JATOS/wiki/Contact-us).
