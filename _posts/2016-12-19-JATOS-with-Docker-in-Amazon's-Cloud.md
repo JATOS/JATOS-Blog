@@ -18,7 +18,7 @@ A short notice about the cost. Of course no cloud solution is for free, but some
 
 JATOS has a Docker container. It's stored at [Docker Hub](https://hub.docker.com/r/jatos/jatos/).
 
-All this Docker Cloud, Docker Hub, Docker Registry, Docker Engine, Docker Container, Docker xxx can be quite confusing (at least it was to me). So if you have any questions or problems with your cloud, please [contact us](Contact-us).
+All this Docker Cloud, Docker Hub, Docker Registry, Docker Engine, Docker Container, Docker xxx can be quite confusing (at least it was to me). So if you have any questions or problems with your cloud, please [contact us](https://github.com/JATOS/JATOS/wiki/Contact-us).
 
 ### Registering
 
@@ -48,5 +48,5 @@ That's all! You now have a JATOS installation in the cloud.
 
 ### Some notes
 
-* It is also possible to add **HTTPS** encryption to your AWS instance. This can be achieved with a [load balancer in AWS and you'd need a certificate](http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/elb-create-https-ssl-load-balancer.html). But I don't want to explain this here in detail and if you have questions or need advice [[contact us]] directly.
-* Be aware that each time you **redeploy** the JATOS docker container you practically install it anew and therefore **delete the study assets and database** of the old one. If you want to keep your old study assets and result data you have to make a backup of them. Have a look at [[Updating a JATOS server installation]] for instructions.
+* It is also possible to add **HTTPS** encryption to your AWS instance. This can be achieved with a [load balancer in AWS and you'd need a certificate](http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/elb-create-https-ssl-load-balancer.html). But I don't want to explain this here in detail and if you have questions or need advice [contact us](https://github.com/JATOS/JATOS/wiki/Contact-us) directly.
+* Be aware that each time you **redeploy** the JATOS docker container you practically install it anew and therefore **delete the study assets and database** of the old one. If you want to keep your old study assets and result data you have to make a backup of them. Have a look at [Updating a JATOS server installation](https://github.com/JATOS/JATOS/wiki/Updating-a-JATOS-server-installation) for instructions.
