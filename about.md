@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This blog is about [JATOS](www.jatos.org) (Just Another Tool for Online Studies).
+This blog is about [JATOS](http://www.jatos.org) (Just Another Tool for Online Studies).
 
 JATOS helps you setup and run your online studies on your own server.
 
