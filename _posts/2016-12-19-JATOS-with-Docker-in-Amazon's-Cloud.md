@@ -3,6 +3,8 @@ layout: post
 title: JATOS with Docker in Amazon's Cloud
 ---
 
+*This text was origiginally in JATOS' wiki but I moved it here mostly because I think it doesn't really fit in the wiki. It's a too special use case and it's using a very narrow tool set (Docker Cloud with AWS). Nevertheless it's still correct and valid.*
+
 This is a little tutorial on how to install JATOS on Amazon's Cloud by using Docker Cloud as a deployment service. But this is just an example. There are many other Docker hosting services like like Google Cloud, Digital Ocean, Microsoft Azure, etc. - a nice comparison is in this [blog post of Cris Ward](https://blog.codeship.com/the-shortlist-of-docker-hosting/).
 
 I used Docker Cloud as a helping service to bring my Docker container with JATOS that is stored on Docker Hub to Amazon's EC2 cloud. :)
