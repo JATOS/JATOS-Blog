@@ -26,6 +26,8 @@ Apart from this it doesn't need any modifications (although you can add anything
 
 Now it's time to create the server. Press the big green button! (The one that says "Create server"). You'll see a new page with a box that says something like 'Ubuntu 16.04 - 138.68.139.250' (you'll have a different IP address). Copy this IP into a new browser tab and it should, if everything went well, show the JATOS login. Actually it might take some time depending on the location and time: I tried London and Frankfurt. London took over 2 min to come up, while Frankfurt was there after about 10 seconds.
 
+![Dply form screenshot]({{ site.baseurl }}/images/Screenshot from 2016-12-20 14-18-31.png)
+
 Thats it. You have a server running JATOS.
 
 If you want you can get a secure shell to your server with root@your-ip-address. If you want to check the start-up logs, they are in `/var/logs/cloud-init-output.log`.
