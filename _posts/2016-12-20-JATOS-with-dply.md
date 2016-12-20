@@ -11,6 +11,8 @@ And the nice thing is it works with a button press!
 
 You'll need a GitHub account and your public ssh-key.
 
+### Server Setup
+
 After pressing the above Dply button you'll see a form. You must specify the server name (anything you want), location (choose one near yourself) and the service plan (get the free one). Keep the OS (Ubuntu). Copy-paste your public ssh-key into the appropriate field. You might need it later on if you want to access your server via ssh.
 
 The last field is the 'User-data Script'. It already has a shell script in there. You might  change the version of JATOS in the line 
@@ -23,9 +25,9 @@ Now it's time to create the server. Press the button! You'll see a new page with
 
 That's it. You have a server with JATOS.
 
-You can get a secure shell to your server with root@your-ip-address. If you want to check the start-up logs, they are in `/var/logs/cloud-init-output.log`.
+If you want you can get a secure shell to your server with root@your-ip-address. If you want to check the start-up logs, they are in `/var/logs/cloud-init-output.log`.
 
-Some notes in the end:
+### Some notes in the end:
 
 * This is a simple server setup. It doesn't start JATOS automatically after a restart of the server, nor does it have any backup.
 * Also be aware that a cloud server might [not be the best place for the sensitve data of your online studies](https://github.com/JATOS/JATOS/wiki/Data-Privacy-and-Ethics).
