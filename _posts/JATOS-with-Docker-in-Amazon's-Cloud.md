@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: post
 title: JATOS with Docker in Amazon's Cloud
 ---
 
