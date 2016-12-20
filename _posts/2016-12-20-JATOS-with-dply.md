@@ -26,5 +26,6 @@ That's it. You have a server with JATOS.
 You can get a secure shell to your server with root@your-ip-address. If you want to check the start-up logs, they are in `/var/logs/cloud-init-output.log`.
 
 Some notes in the end:
+
 * This is a simple server setup. It doesn't start JATOS automatically after a restart of the server, nor does it have any backup.
 * Also be aware that a cloud server might [not be the best place for the sensitve data of your online studies](https://github.com/JATOS/JATOS/wiki/Data-Privacy-and-Ethics).
