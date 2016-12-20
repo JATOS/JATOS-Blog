@@ -21,7 +21,7 @@ The last field is the 'User-data Script'. It already has a shell script in there
 
 Apart from this it doesn't need any modifications (although you can add anything you please to the script). 
 
-Now it's time to create the server. Press the button! You'll see a new page with a box that says something like 'Ubuntu 16.04 - 138.68.139.250' - but you'll have a different IP address. Copy this IP into a new browser tab and it should, if everything went well, show the JATOS login. Actually it might take some time depending on the location and time: I tried London an Frankfurt and London took over 2 min to come up, while Frankfurt was there after circa 10 seconds.
+Now it's time to create the server. Press the button! You'll see a new page with a box that says something like 'Ubuntu 16.04 - 138.68.139.250' (you'll have a different IP address). Copy this IP into a new browser tab and it should, if everything went well, show the JATOS login. Actually it might take some time depending on the location and time: I tried London an Frankfurt and London took over 2 min to come up, while Frankfurt was there after circa 10 seconds.
 
 That's it. You have a server with JATOS.
 
