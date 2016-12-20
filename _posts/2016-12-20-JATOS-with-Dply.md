@@ -16,6 +16,8 @@ You'll need a GitHub account and your public ssh-key.
 
 After pressing the Dply button above you'll see a form. You have to specify the server name (anything you want), location (choose one near yourself) and the service plan (get the free one). Keep the OS (Ubuntu). Copy-paste your public ssh-key into the appropriate field. You might need it later on if you want to access your server via ssh.
 
+![Dply form screenshot](https://github.com/JATOS/jatos.github.io/images/Screenshot from 2016-12-20 17-55-33.png)
+
 The last field is the 'User-data Script'. It already has a shell script in there. You might have to change the version of JATOS in the line 
 
 `wget -P /root https://github.com/JATOS/JATOS/releases/download/v2.2.4/jatos-2.2.4_linux_java.zip`
