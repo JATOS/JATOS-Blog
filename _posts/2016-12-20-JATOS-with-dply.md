@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Easy JATOS server with Dply
+title: Get an JATOS server easily with Dply
 ---
 I was always looking for an easy way for bringing JATOS in the internet but never found an easy enough solution. Most server or cloud provider target bigger companies and have a quite complex setup - nothing one like's to do if it's just about trying a little tool like JATOS. But lately I stumbled over Dply. It's still in beta but it might fill this empty spot in cloud vendor landscape. 
 
