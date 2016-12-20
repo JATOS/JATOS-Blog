@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Get an JATOS server easily with Dply
+author: Kristian Lange
+email: lange.kristian@gmail.com
 ---
 I was always looking for an easy way to install JATOS on a server (to make it accessible from the Internet); but I never found an easy enough solution. Most server or cloud providers target bigger companies and have a quite complex setup - nothing one wants to do if it's just about trying a little tool like JATOS. But lately I stumbled over Dply. It's still in beta but it might fill this empty spot in the cloud vendor landscape. 
 
