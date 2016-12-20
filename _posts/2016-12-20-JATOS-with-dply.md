@@ -3,7 +3,7 @@ layout: post
 title: Easy JATOS server with Dply
 ---
 
-Dply is a new service that allows you to quickly create a temporary cloud server for free - actually only the the first 2 hours are free, then it cost some money (currently it's 3$ per week). The servers are basic and it might take a bit longer than usual for a page to load. But nevertheless it's a great tool to try JATOS in the real internet and maybe run a little study. Find more information about Dply under https://dply.co/how.
+Dply is a new service that allows you to quickly create a temporary cloud server for free - actually only the the first 2 hours are free, then it cost some money (currently it's 3$ per week). The servers are basic and it might take a bit longer than usual for a page to load. But nevertheless it's a great tool to try JATOS in the real internet and maybe run a little study. Find more information about Dply under [https://dply.co/how](https://dply.co/how).
 
 And the nice thing is it works with a button press!
 
