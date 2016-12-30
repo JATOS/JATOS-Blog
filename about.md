@@ -10,8 +10,8 @@ JATOS helps you setup and run your online studies on your own server.
 
 ### More information
 
-Find more information about JATOS in [our documentation](https://github.com/JATOS/JATOS/wiki).
+Find more information about JATOS in [our documentation](http://www.jatos.org/Whats-JATOS.html).
 
 ### Contact us
 
-If you have questions about JATOS or online experiments in general please [contact us](https://github.com/JATOS/JATOS/wiki/Contact-us).
+If you have questions about JATOS or online experiments in general please [contact us](http://www.jatos.org/Contact-us.html).
