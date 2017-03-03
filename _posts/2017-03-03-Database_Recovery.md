@@ -27,9 +27,9 @@ Unfortunately in this case the experimenter running this JATOS had recently gath
 
 Apparently H2 comes shipped with a [recovery tool](http://www.h2database.com/javadoc/org/h2/tools/Recover.html). I've never attempted a recovery so far.
 
-First, one has to download the H2 .jar file with the same version as the one your JATOS is using. In my case it is JATOS 2.2.4 and this version uses H2 version 1.4.192. You can look up H2 version in JATOS' [build.sbt](https://github.com/JATOS/JATOS/blob/master/build.sbt) (and its history if you don't use the current JATOS version). H2's webpage provides only the latest version but you can find older ones in other places, e.g. on [www.versioneye.com/search?q=h2](https://www.versioneye.com/search?q=h2).
+First, one has to download the H2 _.jar_ file with the same version as the one your JATOS is using. In my case it is JATOS 2.2.4 and this version uses H2 version 1.4.192. You can look up H2 version in JATOS' [build.sbt](https://github.com/JATOS/JATOS/blob/master/build.sbt) (and its history if you don't use the current JATOS version). H2's webpage provides only the latest version but you can find older ones in other places, e.g. on [www.versioneye.com/search?q=h2](https://www.versioneye.com/search?q=h2).
 
-Now to the database files: one can find them in the folder _database_ within the JATOS folder. There are two files: _jatos.mv.db_ and _jatos.trace.db_ and both we need. I strongly recommend not to attempt the recovery on the original database files. Copy them to some other place together with H2's .jar file.
+Now to the database files: one can find them in the folder _database_ within the JATOS folder. There are two files: _jatos.mv.db_ and _jatos.trace.db_ and both we need. I strongly advice not to attempt the recovery on the original database files. Copy them to some other place together with H2's _.jar_ file.
 
 Now it was time to start the recovery. Since it is a .jar we need Java. Then it's just:
 ```
@@ -37,7 +37,7 @@ java -cp h2*.jar org.h2.tools.Recover
 ```
 It will find the database files if they are in the same folder.
 
-Unfortunately the attempt was a failure.
+Unfortunately the attempt was a failure in this case.
 
 ```
 java -cp h2-1.4.192.jar org.h2.tools.Recover
@@ -48,7 +48,7 @@ Caused by: java.io.EOFException
 	... 15 more
 ```
 
-The _jatos.mv.db_ file itself seems to be corrupted. Nothing I can do there (as far as I know).
+The _jatos.mv.db_ file itself seems to be corrupted. Nothing I can do here (as far as I know).
 
 Some advice in the end. The cause for the database corruption here was likely a file access from the OS while JATOS was running. **So, please**
 * **do not copy the JATOS database files while JATOS is still running.**
