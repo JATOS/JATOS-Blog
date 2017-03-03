@@ -52,5 +52,5 @@ The _jatos.mv.db_ file itself seems to be corrupted. Nothing I can do here (as f
 
 Some advice in the end. The cause for the database corruption here was likely a file access from the OS while JATOS was running. **So, please**
 * **do not copy the JATOS database files while JATOS is still running.**
-* **If you want to run JATOS on two instances, you have to stop running JATOS and copy the JATOS folder including its db file before.**
+* **if you want to run JATOS on two instances, you have to stop running JATOS and copy the JATOS folder including its db file before.**
 * **do backup. To backup the database copy the /database folder in the JATOS folder to a safe place.**
