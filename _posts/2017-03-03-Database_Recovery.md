@@ -31,7 +31,7 @@ First, one has to download the H2 _.jar_ file with the same version as the one y
 
 Now to the database files: one can find them in the folder _database_ within the JATOS folder. There are two files: _jatos.mv.db_ and _jatos.trace.db_ and both we need. I strongly advice not to attempt the recovery on the original database files. Copy them to some other place together with H2's _.jar_ file.
 
-Now it was time to start the recovery. Since it is a .jar we need Java. Then it's just:
+Now it was time to start the recovery. Since it is a _.jar_ we need Java. Then it's just:
 ```
 java -cp h2*.jar org.h2.tools.Recover
 ```
