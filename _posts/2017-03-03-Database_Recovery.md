@@ -29,7 +29,7 @@ Apparently H2 comes shipped with a [recovery tool](http://www.h2database.com/jav
 
 First, one has to download the H2 .jar file with the same version as the one your JATOS is using. In my case it is JATOS 2.2.4 and this version uses H2 version 1.4.192. You can look up H2 version in JATOS' [build.sbt](https://github.com/JATOS/JATOS/blob/master/build.sbt) (and its history if you don't use the current JATOS version). H2's webpage provides only the latest version but you can find older ones in other places, e.g. on [www.versioneye.com/search?q=h2](https://www.versioneye.com/search?q=h2).
 
-The database files one can find in the folder where JATOS is installed and there in the folder _database_. There are two files: _jatos.mv.db_ and _jatos.trace.db_ and both we need. I recommend not to attempt the recovery on the original database files. Copy them to some other place together with H2's .jar file.
+Now to the database files: one can find them in the folder _database_ within the JATOS folder. There are two files: _jatos.mv.db_ and _jatos.trace.db_ and both we need. I strongly recommend not to attempt the recovery on the original database files. Copy them to some other place together with H2's .jar file.
 
 Now it was time to start the recovery. Since it is a .jar we need Java. Then it's just:
 ```
