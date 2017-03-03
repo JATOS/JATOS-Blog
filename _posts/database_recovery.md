@@ -1,6 +1,8 @@
 ---
 layout: post
-title: A failed attempt to recover a H2 database of JATOS
+title: A failed attempt to recover JATOS' H2 database
+author: Kristian Lange
+email: lange.kristian@gmail.com
 ---
 
 I was just asked to help with a broken JATOS instance. The logs were full of error messages like
