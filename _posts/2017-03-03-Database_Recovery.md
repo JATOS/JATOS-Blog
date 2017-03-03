@@ -42,23 +42,7 @@ Unfortunately the attempt was a failure.
 ```
 java -cp h2-1.4.192.jar org.h2.tools.Recover
 Exception in thread "main" java.lang.IllegalStateException: Reading from cache:nio:/h2_recover/jatos.mv.db failed; file length 868352 read length 128 at 21963215 [1.4.192/1]
-	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
-	at org.h2.mvstore.DataUtils.readFully(DataUtils.java:443)
-	at org.h2.mvstore.FileStore.readFully(FileStore.java:98)
-	at org.h2.mvstore.Page.read(Page.java:190)
-	at org.h2.mvstore.MVStore.readPage(MVStore.java:1944)
-	at org.h2.mvstore.MVMap.readPage(MVMap.java:736)
-	at org.h2.mvstore.Page.getChildPage(Page.java:217)
-	at org.h2.mvstore.Cursor.fetchNext(Cursor.java:150)
-	at org.h2.mvstore.Cursor.next(Cursor.java:50)
-	at org.h2.mvstore.MVStore.loadChunkMeta(MVStore.java:692)
-	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:672)
-	at org.h2.mvstore.MVStore.<init>(MVStore.java:355)
-	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
-	at org.h2.mvstore.MVStoreTool.info(MVStoreTool.java:336)
-	at org.h2.tools.Recover.process(Recover.java:342)
-	at org.h2.tools.Recover.runTool(Recover.java:196)
-	at org.h2.tools.Recover.main(Recover.java:159)
+	...
 Caused by: java.io.EOFException
 	at org.h2.mvstore.DataUtils.readFully(DataUtils.java:431)
 	... 15 more
