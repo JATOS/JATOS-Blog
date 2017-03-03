@@ -25,7 +25,7 @@ Usually the H2 database JATOS is using as a default is very reliable and so far 
 
 Unfortunately in this case the experimenter running this JATOS had recently gathered some data and hadn't backed them up. So the only hope to rescue those data was to try to recover from the corrupted database file. 
 
-I've never attempted a recovery before. But apparently H2 comes shipped with a [recovery tool](http://www.h2database.com/javadoc/org/h2/tools/Recover.html). 
+Apparently H2 comes shipped with a [recovery tool](http://www.h2database.com/javadoc/org/h2/tools/Recover.html). I've never attempted a recovery so far.
 
 First one has to download the H2 .jar file with the same version as the one your JATOS is using. In my case it is JATOS 2.2.4 and this version uses H2 version 1.4.192. You can look up H2 version in JATOS' [build.sbt](https://github.com/JATOS/JATOS/blob/master/build.sbt) (and its history if you don't use the current JATOS version). H2's webpage provides only the latest version but you can find older ones in other places, e.g. on [www.versioneye.com](https://www.versioneye.com). 
 
