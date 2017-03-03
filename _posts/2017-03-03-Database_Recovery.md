@@ -48,8 +48,8 @@ Caused by: java.io.EOFException
 	... 15 more
 ```
 
-The _jatos.mv.db_ file itself seem to be corrupted. Nothing I can do there (as far as I know).
+The _jatos.mv.db_ file itself seems to be corrupted. Nothing I can do there (as far as I know).
 
-Some advice in the end. The cause for the database corruption here was likely a file access from the OS while JATOS was running. So, please
-* do not copy the JATOS database files while JATOS is still running.
-* If you want to run JATOS on two instances, you have to stop running JATOS and copy the JATOS folder including its db file before.
+Some advice in the end. The cause for the database corruption here was likely a file access from the OS while JATOS was running. *So, please*
+* *do not copy the JATOS database files while JATOS is still running.*
+* *If you want to run JATOS on two instances, you have to stop running JATOS and copy the JATOS folder including its db file before.*
