@@ -33,6 +33,8 @@ In version 3 of JATOS each request has some added security headers like describe
 
 ## For the paranoid admin
 
-Last, if you don't trust JATOS' user sessions at all you can always restrict the access to JATOS GUI and therefore to all result data and potentially sensitive data to your intranet by setting up your proxy in a way that it does not permit access to URL queries that start with `/jatos`. These example configurations for [Nginx](http://www.jatos.org/JATOS-with-Nginx.html) and [Apache](http://www.jatos.org/JATOS-with-Apache.html) show this but the lines are still commented out.
+Last, if you don't trust JATOS' user sessions at all you can always restrict the access to JATOS GUI and therefore to all result data and potentially sensitive data to your intranet. Just set up your proxy in a way that it does not permit access to URL paths that start with `/jatos`. But make sure that all other URL paths are accessible from the internet.
+
+Here are two example configurations for [Nginx](http://www.jatos.org/JATOS-with-Nginx.html) and [Apache](http://www.jatos.org/JATOS-with-Apache.html) (lines are still commented out).
 
 
