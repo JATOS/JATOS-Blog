@@ -11,7 +11,7 @@ JATOS 3 is out and it got some nice security improvements that I want to talk ab
 
 First and most important is the better user session security. 
 
-_Don't confuse the user session with the study/batch/group session: the first one is responsible for the authentication of a user in JATOS' GUI - the latter [transfers information inbetween components, batches or groups during study runs](http://www.jatos.org/Session-Data-Three-Types.html)._
+_Hint: Don't confuse the user session with the study/batch/group session: the first one is responsible for the authentication of a user in JATOS' GUI - the latter [transfers information inbetween components, batches or groups during study runs](http://www.jatos.org/Session-Data-Three-Types.html)._
 
 A user session cares for authentication and because HTTP is stateless, in order to associate a request to any other request, you need a way to store user data between HTTP requests (http://stackoverflow.com/questions/3804209/what-are-sessions-how-do-they-work).
 
@@ -23,12 +23,16 @@ Since JATOS 3 each user session now gets a new session ID (even for the same use
 
 Additionally JATOS version 3 now has a session timout: By default the user session is invalidated after an hour of inactivity and is limited to 24 hours overall. Both times are configurable in [JATOS' `production.conf`](http://www.jatos.org/Configure-JATOS-on-a-Server.html).
 
-
-
 ## Account lockout
 
+Since JATOS 3 one has to wait 60 secs after three failed login attempts. This makes dictionary and brute force attacks much harder.
 
-- encrypted session cookie
-- security headers
-- restrict /jatos to intranet
+## Security headers
+
+In version 3 of JATOS each request has some added security headers like described in [Play's documentation](https://www.playframework.com/documentation/2.5.x/SecurityHeaders). One of those headers for instance prevents [clickjacking with Iframes](https://en.wikipedia.org/wiki/Clickjacking).
+
+## For the paranoid admin
+
+Last, if you don't trust JATOS' user sessions at all you can always restrict the access to JATOS GUI and therefore to all result data and potentially sensitive data to your intranet by setting up your proxy in a way that it does not permit access to URL queries that start with `/jatos`. These example configurations for [Nginx](http://www.jatos.org/JATOS-with-Nginx.html) and [Apache](http://www.jatos.org/JATOS-with-Apache.html) show this but the lines are still commented out.
+
 
