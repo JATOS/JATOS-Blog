@@ -19,7 +19,7 @@ JATOS' user session ID is stored in [Play's session cookie](https://www.playfram
 
 Btw if you access JATOS via HTTPS only you should set `play.http.session.secure=true` in the `production.conf` which prevents Play's session cookie to be written in unencrypted requests.
 
-Since JATOS 3 each user session now gets a new session ID (even for the same user) and during logout the ID gets invalidated. User session IDs are stored on the server side in an cache together with the users IP. Therefore even if someone somehow gets access to Play's session cookie (session hijacking), they can't use it to access JATOS since they have a different IP/address.
+Since JATOS 3 each user session now gets a new session ID (even for the same user) and during logout the ID gets invalidated. User session IDs are stored on the server side in an cache together with the users IP address. Therefore even if someone somehow gets access to Play's session cookie (session hijacking), they can't use it to access JATOS since they have a different IP/address.
 
 Additionally JATOS version 3 now has a session timout: By default the user session is invalidated after an hour of inactivity and is limited to 24 hours overall. Both times are configurable in [JATOS' `production.conf`](http://www.jatos.org/Configure-JATOS-on-a-Server.html).
 
