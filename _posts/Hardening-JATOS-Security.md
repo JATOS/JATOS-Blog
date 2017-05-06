@@ -13,7 +13,7 @@ First and most important is the better user session security.
 
 _Don't confuse the user session with the study/batch/group session: the first one is responsible for the authentication of a user in JATOS' GUI - the latter [transfers information inbetween components, batches or groups during study runs](http://www.jatos.org/Session-Data-Three-Types.html)._
 
-A user session cares for authentication and because HTTP is stateless, in order to associate a request to any other request, you need a way to store user data between HTTP requests ([http://stackoverflow.com/questions/3804209/what-are-sessions-how-do-they-work]).
+A user session cares for authentication and because HTTP is stateless, in order to associate a request to any other request, you need a way to store user data between HTTP requests (http://stackoverflow.com/questions/3804209/what-are-sessions-how-do-they-work).
 
 JATOS' user session ID is stored in [Play's session cookie](https://www.playframework.com/documentation/2.5.x/JavaSessionFlash). This means it is readable for everyone but can't be manipulated since Play always adds a hash and any tempering in the cookie string would be detected subsequently.
 
