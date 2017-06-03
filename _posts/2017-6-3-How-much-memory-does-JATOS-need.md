@@ -11,7 +11,7 @@ The easy solution for this issue was to reduce the cache size to just 25 MB (sti
 
 **For the more impatient reader: It's usually under 400 MB on a system with low memory and under 700 MB without memory restrictions.**
 
-But now to the boring details. Actually it's not easy to determine the memory usage of a Java application. Java runs on the JVM (Java Virtual Machine) and what the JVM is doing memory-wise can be pretty complex. First there is something called garbage collection. Every now and the JVM decides to do some house keeping and clean the memory of old objects: garbage collection. If one looks at a graph of the heap memory (that's where the JVM keeps the objects) it has this typical zig-zag curve: old object's memory piles up until the next garbage collection kicks in and let the heap memory drop again.
+But now to the boring details. Actually it's not easy to determine the memory usage of a Java application. Java runs on the JVM (Java Virtual Machine) and what the JVM is doing memory-wise can be pretty complex. First there is something called garbage collection. Every now and the JVM decides to do some house keeping and clean the memory of old objects: garbage collection. If one looks at a graph of the heap memory (that's where the JVM keeps the objects) it has this typical zigzag curve: old object's memory piles up until the next garbage collection kicks in and let the heap memory drop again.
 
 ![JVM gc]({{ site.baseurl }}/images/JVM-garbage-collection.png)
 
@@ -42,7 +42,7 @@ _I did my tests on my laptop with Ubuntu 16.04 and the JVM OpenJDK 64-Bit Server
 
 ### Conclusions
 
-* Clearly visible the more workers JATOS has to serve in paralel the more memory usage JATOS will have.
+* Clearly visible the more workers JATOS has to serve in parallel the more memory usage JATOS will have.
 * JATOS will use more memory (for optimization and hopefully performance) if you give it more memory.
 * JATOS can run 30 workers while using under 400 MB if one restricts the JVM's memory either by enforcing it with -J-Xmx or by using a system with limited memory.
 * If given a system with 1 GB (like AWS EC2 micro) JATOS should run happily on it.
