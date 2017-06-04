@@ -7,13 +7,13 @@ email: lange.kristian@gmail.com
 
 JATOS 3 stores its user session in a local cache and initially I gave this cache without much thinking 256 MB of memory. 256 MB is ridiculously high for a cache that just stores a couple of user sessions. But hey I have 16 GB on my laptop - who cares. Actually people do care. Especially those who want to run JATOS on systems with limited resources like an AWS EC2 micro instance with just 1 GB. If you just have 1 GB then 256 MB is a lot.
 
-The easy solution for this issue was to reduce the cache size to just 25 MB (still more than enough). But it made me thinking: how much memory does JATOS actually need?
+The easy solution for this issue was to reduce the cache size to just 25 MB (still more than enough). But it made me think: how much memory does JATOS actually need?
 
 **For the more impatient reader: It's usually under 400 MB on a system with low memory and under 700 MB without memory restrictions.**
 
 But now to the boring details. Actually it's not easy to determine the memory usage of a Java application. Java runs on the JVM (Java Virtual Machine) and what the JVM is doing memory-wise can be pretty complex. First there is something called garbage collection. Every now and the JVM decides to do some house keeping and clean the memory of old objects: garbage collection. If one looks at a graph of the heap memory (that's where the JVM keeps the objects) it has this typical zigzag curve: old object's memory piles up until the next garbage collection kicks in and let the heap memory drop again.
 
-![JVM gc]({{ site.baseurl }}/images/JVM-garbage-collection.png)
+![JVM gc]({{ site.baseurl }}/images/JVM-garbage-collection.png) (Made with [VisualVM](https://visualvm.github.io/))
 
 How much heap memory an app is allowed to use can be configured. JATOS is build with the Play Framework and Play allows the [run parameter -J-Xms and -J-Xmx](https://www.playframework.com/documentation/2.5.x/ProductionConfiguration#JVM-configuration) to specify minumum and maximum heap memory.
 
@@ -38,11 +38,11 @@ Next I told the JVM to use maximal 64 MB heap memory and started JATOS with
 | 20 workers | 340 MB            |
 | 30 workers | 358 MB            |
 
-_I did my tests on my laptop with Ubuntu 16.04 and the JVM OpenJDK 64-Bit Server, version 1.8.0_131._
+_I did my tests on my laptop with Ubuntu 16.04 and the JVM OpenJDK 64-Bit Server, version 1.8.0_131 and 16 GB memory._
 
 ### Conclusions
 
-* Clearly visible the more workers JATOS has to serve in parallel the more memory usage JATOS will have.
+* The more workers JATOS has to serve in parallel the more memory usage JATOS will have.
 * JATOS will use more memory (for optimization and hopefully performance) if you give it more memory.
 * JATOS can run 30 workers while using under 400 MB if one restricts the JVM's memory either by enforcing it with -J-Xmx or by using a system with limited memory.
 * If given a system with 1 GB (like AWS EC2 micro) JATOS should run happily on it.
