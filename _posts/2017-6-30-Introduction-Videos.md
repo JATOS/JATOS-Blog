@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto-Start JATOS with systemd
+title: JATOS Introduction Videos
 author: Kristian Lange
 email: lange.kristian@gmail.com
 ---
