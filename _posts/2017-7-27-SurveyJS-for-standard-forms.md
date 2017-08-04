@@ -36,4 +36,4 @@ survey.onComplete.add(function (result) {
 
 To have a quick look or a good starting point in JATOS download and import the [SurveyJS example study](http://www.jatos.org/Example-Studies.html#demographic-and-survey-questions-using-surveyjs-library).
  
-Edit: I just stumbled over [JetBrains Ring UI](http://www.jetbrains.org/ring-ui) that also offers some nice UI elements for the browser - although it doesn't really seems to target survey but application UIs.
+**Edit**: I just stumbled over [JetBrains Ring UI](http://www.jetbrains.org/ring-ui) that also offers some nice UI elements for the browser - although it doesn't really seems to target survey but application UIs.
