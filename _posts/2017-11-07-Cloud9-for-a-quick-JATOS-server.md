@@ -5,7 +5,7 @@ author: Kristian Lange
 email: lange.kristian@gmail.com
 ---
 
-A JATOS user (Hi Spiro!) told me about [Cloud9](https://c9.io/) and I thought I should mention it in a blog post.
+A JATOS user told me about [Cloud9](https://c9.io/) and I thought I should mention it in a blog post.
 
 It's basically a Linux server that runs in the cloud that you can access via the browser. On top of this it offers a whole web development environment but one can use it just as a bare Ubuntu server. Of course it's working with JATOS. And they have a [free tier](https://c9.io/pricing).
 
