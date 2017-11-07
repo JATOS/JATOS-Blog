@@ -15,9 +15,9 @@ It's pretty impressive: You get easy access to the file system, there is shell w
 
 In order to get JATOS running I downloaded the latest release with wget, e.g.
 
-```shell
+`
 wget https://github.com/JATOS/JATOS/releases/download/v3.1.10/jatos-3.1.10_linux_java.zip
-```
+`
 
 and unzipped it. Cloud9 provides environment variables for IP address and port, `$IP` and `$PORT`, and I used them to configurate JATOS' `loader.sh`. 
 
