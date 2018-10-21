@@ -9,4 +9,6 @@ There is a really easy way to [embed Google Slides](https://support.google.com/d
 
 To see the instructions you need to be online but that is usually not a problem with online studies :)
 
-I included an [example](http://www.jatos.org/Example-Studies.html#easy-instruction-page-with-embedded-google-slides) in our Example Studies page.  
+I included an [example](http://www.jatos.org/Example-Studies.html#easy-instruction-page-with-embedded-google-slides) in our Example Studies page.
+
+Tip: You probably want to increase the parameter `delayms` to a higher number to prevent the slides from automatically going forward, e.g. set it to `delayms=6000000`.
