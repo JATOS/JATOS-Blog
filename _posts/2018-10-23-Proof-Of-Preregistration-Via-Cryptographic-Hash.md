@@ -1,3 +1,10 @@
+---
+layout: post
+title: Proof of Preregistration via Cryptographic Hash
+author: Kristian Lange
+email: lange.kristian@gmail.com
+---
+
 [_Matan Mazor_ suggested](https://medium.com/@mazormatan/cryptographic-preregistration-from-newton-to-fmri-df0968377bb2) to use a cryptographic hash as a seed to randomize stimulus sequences in order to prove that the preregistration happened before data collection. I thought this is a good idea. You can easily do it with JATOS. Here is how.
 
 Each JATOS study has in its properties a field _Description_ where you can store a description of the study. Whatever one writes in there is shown in the top of the study page. But behind the scene JATOS additionally calculates a hash of everything in _Description_ and stores it together with a timestamp in the study's [Study Log](http://www.jatos.org/Study-Log.html). This entry might look like this here:
