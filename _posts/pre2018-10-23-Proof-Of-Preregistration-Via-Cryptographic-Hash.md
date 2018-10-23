@@ -1,0 +1,1 @@
+[Matan Mazor suggested](https://medium.com/@mazormatan/cryptographic-preregistration-from-newton-to-fmri-df0968377bb2) to use a cryptographic hash as a seed to randomize stimulus sequences in order to proof that the preregistration happend before data collection. I thought this is a good idea. You can easily do it with JATOS. Here is how.
