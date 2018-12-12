@@ -24,3 +24,5 @@ So now you already have a proof of the time when you wrote this _Description_ (i
 What _Matan_ additionally suggests is to use this hash as an input to the calculations you might do in your experiment (e.g. as a seed for a random function). You can get the hash from the Study Log but there is also a `jatos.js` variable `jatos.studyProperties.descriptionHash` if you want to use it directly in your study's JavaScript.
 
 Now you have a happens-before relationship between your _Description_ and your result data.
+
+EDIT (December 2018):  See the [published article introducing cryptographic preregistration](https://rdcu.be/bdbES) at the European Journal of Neuroscience. (Mazor, M., Mazor, N., & Mukamel, R. (2018). A novel tool for time‐locking study plans to results)
