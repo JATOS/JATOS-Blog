@@ -5,6 +5,8 @@ author: Kristian Lange
 email: lange.kristian@gmail.com
 ---
 
+_This post is about how much memory JATOS needs for a single user. If you intend to set up JATOS for several user (e.g. for an institute) JATOS needs more memory. The same is true for an experiment with many or large result data._
+
 JATOS 3 stores its user session in a local cache and initially I gave this cache without much thinking 256 MB of memory. 256 MB is ridiculously high for a cache that just stores a couple of user sessions. But hey I have 16 GB on my laptop - who cares. Actually people do care. Especially those who want to run JATOS on systems with limited resources like an AWS EC2 micro instance with just 1 GB. If you just have 1 GB then 256 MB is a lot.
 
 The easy solution for this issue was to reduce the cache size to just 25 MB (still more than enough). But it made me think: how much memory does JATOS actually need?
